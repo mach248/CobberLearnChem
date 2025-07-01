@@ -1,2 +1,2 @@
 # CobberLearnChem
-computational work created through CobberLearnChem course
+This repository contains Python scripts and assignments completed for CobberLearnChem at Concordia College.
