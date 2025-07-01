@@ -1,0 +1,21 @@
+# Ignore PyCharm settings
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+
+# MacOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# VSCode settings (if students switch editors)
+.vscode/
