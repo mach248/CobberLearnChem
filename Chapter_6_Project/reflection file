@@ -1,0 +1,32 @@
+Pitfalls of Using the Mean to Fill Missing Values
+
+    It distorts the distribution
+
+        Mean imputation reduces the natural variability in your data.
+
+        It can make the distribution look artificially “tight” and underestimate variance.
+
+    It ignores correlations with other variables
+
+        It treats all passengers the same, regardless of their gender, class, or other features that might relate to age.
+
+        For example, younger passengers might be more common in 3rd class — but mean imputation can't reflect that.
+
+    It can bias model training
+
+        If you're using the dataset for machine learning, repeated mean values can skew model training or reduce accuracy, especially with models sensitive to outliers or distributions (e.g., linear regression).
+
+    It assumes missingness is random
+
+        If data are not missing at random (e.g., older people’s ages are more likely to be missing), then mean imputation introduces systematic bias.
+
+ Better Alternatives (Context-Dependent)
+
+    Median imputation: More robust to outliers.
+
+    Group-wise imputation: Use the average age within each group (e.g., by gender or class).
+
+    Model-based imputation: Predict missing values using other features.
+
+    Multiple imputation: Statistically models uncertainty by generating several versions of the dataset.
+
