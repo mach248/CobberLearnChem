@@ -1,0 +1,7 @@
+Here’s what happened:
+The pre-trained VGG16 model was successfully loaded.
+Your input image was preprocessed correctly.
+The model predicted the object in the image as an African elephant with 92% confidence, followed by tusker at 7%.
+The rest of the predictions had very low confidence, which is expected if the top match is strong.
+This shows that your image processing pipeline is solid and your TensorFlow + VGG16 setup is running smoothly.
+Also displayed the input image with prediction label.
