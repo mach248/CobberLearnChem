@@ -1,1 +1,1 @@
-network model from textbook predicted a similar bp as the linear regression (53 oC).  Changed hidden layer to 15, 7 and prediction was very close!
+network model from textbook predicted a similar bp as the linear regression and quite poor.  Changed hidden layer to 15, 7 and prediction was very close!

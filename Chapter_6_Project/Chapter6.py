@@ -1,5 +1,6 @@
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Load Titanic dataset from seaborn
 df = sns.load_dataset("titanic")
@@ -19,4 +20,3 @@ df['age'] = df['age'].fillna(mean_age)    # ✅ Safe and future-proof
 
 # Step 4: Check again for missing values
 print(f"Missing values after imputation: {df['age'].isnull().sum()}")
-

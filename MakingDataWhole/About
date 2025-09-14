@@ -1,0 +1,27 @@
+This code does the following:
+
+    Prepares the data for KNN imputation by:
+        Converting categorical variables to numeric using one-hot encoding
+        Standardizing the features (important for KNN to work properly)
+        Selecting relevant features for the imputation model
+
+    Evaluates the KNN imputation model by:
+        Splitting the known age data into training and test sets
+        Applying KNN imputation to the test set
+        Calculating the Mean Absolute Error (MAE) between actual and predicted ages
+        Plotting actual vs. predicted ages to visualize the model's performance
+
+    Applies KNN imputation to the entire dataset and:
+        Reports the average age before and after imputation
+        Reports the average of only the imputed values
+        Visualizes the distribution of ages before and after imputation
+        Compares KNN imputation with mean imputation for the missing values
+
+The plots will help you visualize:
+
+    How well the KNN model predicts known ages
+    How the distribution of ages changes after imputation
+    How KNN imputation differs from simple mean imputation for the missing values
+
+
+

@@ -1,0 +1,42 @@
+
+        <html>
+        <head>
+            <title>Structure Comparison</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .container { display: flex; flex-direction: column; }
+                .viewer { width: 800px; height: 600px; margin-bottom: 20px; }
+                .description { margin-bottom: 20px; }
+            </style>
+        </head>
+        <body>
+            <h1>Experimental vs. AlphaFold Structure Comparison</h1>
+            <div class="description">
+                <p>This visualization shows the superposition of the experimental structure (blue) 
+                and the AlphaFold prediction (red).</p>
+                <p>Use your mouse to rotate, zoom, and pan the structure.</p>
+            </div>
+            <div class="container">
+                <div class="viewer" id="viewport"></div>
+            </div>
+            <script src="https://unpkg.com/ngl@0.10.4/dist/ngl.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var stage = new NGL.Stage("viewport");
+
+                    Promise.all([
+                        stage.loadFile("exp_structure.pdb"),
+                        stage.loadFile("af_structure_aligned.pdb")
+                    ]).then(function(components) {
+                        // Set representations
+                        components[0].addRepresentation("cartoon", {color: "blue"});
+                        components[1].addRepresentation("cartoon", {color: "red"});
+
+                        // Center view
+                        stage.autoView();
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
